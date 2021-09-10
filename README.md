@@ -26,18 +26,26 @@ You're also going to need to install the Netlify CLI:
 
 `npm install -g netlify-cli`
 
-As well as the Prismic CLI so you can clone this workshop:
+First, we're going to use Netlify's Deploy button to connect your site to GitHub and your Netlify account.
 
-`npm install -g prismic-cli`
+[![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dayhaysoos/prismic-workshop-theme)
+
+# Clone github repo
+
+The starting point of this project is empty right now, to see some code you need to clone the Prismic repo
+
+Now you need to clone the Prismic Repo (not to be confused with a GitHub Repo)
 
 To clone the repo, run the following command:
 
-`prismic theme --theme-url https://github.com/dayhaysoos/smashing-mag-workshop --conf prismic-config.js`
+`npx prismic-cli theme --theme-url https://github.com/dayhaysoos/prismic-workshop-theme --conf prismic-config.js --folder ./ --force`
 
-You'll be prompted to give a name to the project, you can call it `smashing-mag-workshop`
+You'll be prompted to give a unique name to your project, use your name in the prefix: `your-name-smashing-mag-workshop`
 
-(This should give them the prismic repo with Custom Types already set up, need to figure out how to set them up with docs properly)
+For example, I'd do `nick-smashing-mag-workshop`
 
+You can see your repo from here:
 
+https://your-name-smashing-mag-workshop.prismic.io/documents/working?l=en-us
 
 Link to slides: https://slides.com/nickdejesus/deck-f1459b
