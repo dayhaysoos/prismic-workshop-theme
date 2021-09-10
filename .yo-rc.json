@@ -1,0 +1,5 @@
+{
+  "generator-prismic-nextjs": {
+    "framework": "nextjs"
+  }
+}
