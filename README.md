@@ -36,9 +36,9 @@ First, we're going to use Netlify's Deploy button to connect your site to GitHub
 
 Clone the repo that just got created on GitHub locally
 
-The starting point of this project is empty right now, to see some code you need to clone the Prismic repo
+The starting point of this project is empty right now
 
-Now you need to clone the Prismic Repo
+Now you need to clone the Prismic Repo from within this project.
 
 ### Step 3
 
