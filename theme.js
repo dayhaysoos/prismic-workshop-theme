@@ -1,3 +1,21 @@
+/**
+ * Walkthrough 2
+ * This here is a theme object configured for theme-ui
+ * @link https://theme-ui.com/getting-started
+ *
+ * This object is where you define the styles you want. You can overwrite the defaults here
+ * or make your own custom styles. To access any of these styles in Theme-UI components, you need
+ * to use the `sx` prop.
+ *
+ * There are ways to use the sx prop on non-theme-ui elements if need be.
+ *
+ * See below how the colors object has a "text" key and #000 as a value? If you want to access the color in the
+ * sx prop, you can refer to it as "text"
+ *
+ * Example: <Box sx={{backgroundColor: background: color: text}}
+ *
+ */
+
 export default {
   colors: {
     text: '#000',

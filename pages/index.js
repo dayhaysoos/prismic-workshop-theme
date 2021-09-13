@@ -6,15 +6,25 @@ import Contact from '../components/contact';
 import { Box, Heading } from 'theme-ui';
 import { Fade } from 'react-awesome-reveal';
 
-export async function getStaticProps() {
-  const home = await Client().getByUID('page', 'home');
+/**
+ * Step 1
+ * Use Next's getStaticProps() to make an API call and query the home page data from Prismic Client()
+ * Client().getByUID(<Custom Type Value>, <Unique ID>)
+ *
+ * returning a props object inside getStaticProps() is how you pass the results to the component as `props`
+ *
+ * Uncomment the getStaticProps function so we can get data to the landing page.
+ */
 
-  return {
-    props: {
-      home,
-    },
-  };
-}
+// export async function getStaticProps() {
+//   const home = await Client().getByUID('page', 'home');
+
+//   return {
+//     props: {
+//       home,
+//     },
+//   };
+// }
 
 export default function Home(props) {
   return (
@@ -51,8 +61,12 @@ export default function Home(props) {
             </Heading>
           </Fade>
         </Box>
-        <SliceZone slices={props.home.data.body} />
-        <Contact />
+        <h1>Fill this page up with stuff</h1>
+        {/** Step 2
+         * Uncomment SliceZone component below so we can render the content for the home page
+         */}
+        {/* <SliceZone slices={props.home.data.body} /> */}
+        {/* <Contact /> */}
       </section>
     </Layout>
   );

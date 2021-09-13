@@ -26,17 +26,23 @@ You're also going to need to install the Netlify CLI:
 
 `npm install -g netlify-cli`
 
+### Step 1
+
 First, we're going to use Netlify's Deploy button to connect your site to GitHub and your Netlify account.
 
 [![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dayhaysoos/prismic-workshop-theme)
 
-# Clone github repo
+### Step 2
+
+Clone the repo that just got created on GitHub locally
 
 The starting point of this project is empty right now, to see some code you need to clone the Prismic repo
 
-Now you need to clone the Prismic Repo (not to be confused with a GitHub Repo)
+Now you need to clone the Prismic Repo
 
-To clone the repo, run the following command:
+### Step 3
+
+To clone the Prismic repo, run the following command:
 
 `npx prismic-cli theme --theme-url https://github.com/dayhaysoos/prismic-workshop-theme --conf prismic-config.js --folder ./ --force`
 
@@ -46,6 +52,28 @@ For example, I'd do `nick-smashing-mag-workshop`
 
 You can see your repo from here:
 
-https://your-name-smashing-mag-workshop.prismic.io/documents/working?l=en-us
+https://your-name-smashing-mag-workshop.prismic.io/
+
+### Step 4
+
+Add your Prismic Repo URL to the `prismic-config.js` file.
+
+There's a variable there called `apiEndpoint`. The value currently assigned should look like this:
+
+`https://your-repo-name.prismic.io/api/v2`
+
+Replace `your-repo-name` with your Prismic Repo name. For example, mine would be:
+
+`https://nick-smashing-mag-workshop.prismic.io/api/v2`
+
+From here, I will be giving a presentation from some slides.
+
+To navigate through the workshop and steps that'll be taken you can search the code base for two things:
+
+Use the search feature for "Walkthrough <number>" to see parts of the code that have been pre-emptively set up already.
+
+Example: "Walkthrough 1". After reading the comments there, move on to "Walkthrough 2"
+
+When you're ready to make changes to the workshop to get to the final product, use the search feature and look for "Step <number>"
 
 Link to slides: https://slides.com/nickdejesus/deck-f1459b
