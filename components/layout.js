@@ -5,6 +5,13 @@ import SkipLink from './skip-link';
 import Footer from './footer';
 import Head from 'next/head';
 
+/**
+ * Walkthrough 4
+ *
+ * This is a generic Layout component that will be used on every page. This is how we make sure the header
+ * and footer is consistent. For really big web experiences, often you'd see multiple Layouts for varying purposes
+ */
+
 const Layout = ({ children }) => {
   return (
     <>

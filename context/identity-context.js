@@ -28,4 +28,4 @@ const IdentityProvider = (props) => {
   );
 };
 
-exports.Provider = IdentityProvider;
+exports.AuthProvider = IdentityProvider;

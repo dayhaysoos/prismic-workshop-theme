@@ -5,6 +5,16 @@ import Link from 'next/link';
 import { Elements } from 'prismic-reactjs';
 import { Box, Heading } from 'theme-ui';
 
+/**
+ * Walkthrough 3
+ * This is the Prismic Config file, the most important thing on this file is going to be Client function.
+ * That's what allows us to  make queries to the Prismic Repo
+ */
+
+/**
+ * htmlSerializers are for overwriting Prismic's defaults when using the RichTextComponent. Read more here:
+ * @link https://prismic.io/docs/technologies/html-serializer-reactjs
+ */
 export const htmlSerializer = function (type, element, content, children, key) {
   let props = {};
 
@@ -36,7 +46,8 @@ export const htmlSerializer = function (type, element, content, children, key) {
   }
 };
 
-export const apiEndpoint = 'https://smashing-mag-workshop.prismic.io/api/v2';
+// Make sure you change `your-repo-name` to point to your Prismic Repo URL
+export const apiEndpoint = 'https://your-repo-name.prismic.io/api/v2';
 
 // -- Access Token if the repository is not public
 // Generate a token in your dashboard and configure it here if your repository is private
@@ -77,6 +88,10 @@ export const Router = {
   },
 };
 
+/**
+ * This is how we will be querying docs, see link below if you're curious.
+ * https://prismic.io/docs/technologies/how-to-query-the-api-reactjs#client
+ */
 export const Client = (req = null, options = {}) =>
   Prismic.client(
     apiEndpoint,
