@@ -44,7 +44,7 @@ Now you need to clone the Prismic Repo from within this project.
 
 To clone the Prismic repo, run the following command:
 
-`npx prismic-cli theme --theme-url https://github.com/dayhaysoos/prismic-workshop-theme/archive/refs/tags/1.0.zip --conf prismic-config.js --folder ./ --force`
+`npx prismic-cli@4.1.1 theme --theme-url https://github.com/dayhaysoos/prismic-workshop-theme/archive/refs/tags/1.0.zip --conf prismic-config.js --folder ./ --force`
 
 You'll be prompted to give a unique name to your project, use your name in the prefix: `your-name-smashing-mag-workshop`
 
@@ -56,6 +56,8 @@ https://your-name-smashing-mag-workshop.prismic.io/
 
 ### Step 4
 
+Go to `prismic-config.js` and check if the variable `apiEndPoint` has the url of your prismic repo in there already. If it does, you skip to step 5.
+
 Add your Prismic Repo URL to the `prismic-config.js` file.
 
 There's a variable there called `apiEndpoint`. The value currently assigned should look like this:
@@ -66,7 +68,14 @@ Replace `your-repo-name` with your Prismic Repo name. For example, mine would be
 
 `https://nick-smashing-mag-workshop.prismic.io/api/v2`
 
+
+### Step 5
+
+Commit the new code that has been added and push to your GitHub repo. Netlify should build successfully and you'll be able to see the workshop UI.
+
 From here, I will be giving a presentation from some slides.
+
+### Note
 
 To navigate through the workshop and steps that'll be taken you can search the code base for two things:
 
