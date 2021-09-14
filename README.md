@@ -30,7 +30,7 @@ You're also going to need to install the Netlify CLI:
 
 First, we're going to use Netlify's Deploy button to connect your site to GitHub and your Netlify account.
 
-[![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dayhaysoos/prismic-workshop-theme)
+[![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dayhaysoos/smashing-mag-workshop)
 
 ### Step 2
 
